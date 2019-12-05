@@ -1,21 +1,17 @@
 class Yatzy:
 
     @staticmethod
-    def chance(*args):
+    def chance(*dice):
         # While, mientras haya dados, que vaya sumando sus valores
         total = 0
-        for d in args:
+        for d in dice:
             total += d
         return total
 
     @staticmethod
     def yatzy(dice):
-        counts = [0]*(len(dice)+1)
-        for die in dice:
-            counts[die-1] += 1
-        for i in range(len(counts)):
-            if counts[i] == 5:
-                return 50
+        if dice.count(dice[0]) == 5:
+            return 50
         return 0
 
     @staticmethod
