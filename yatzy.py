@@ -46,10 +46,11 @@ class Yatzy:
                 sum += 3
         return sum
 
-    def fours(self):
+    @staticmethod
+    def fours(*dice):
         sum = 0
-        for at in range(5):
-            if (self.dice[at] == 4):
+        for d in dice:
+            if (d == 4):
                 sum += 4
         return sum
 
