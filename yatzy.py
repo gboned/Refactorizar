@@ -79,22 +79,13 @@ class Yatzy:
         return max(set(num)) * 2
 
     @staticmethod
-    def two_pair(d1,  d2,  d3,  d4,  d5):
-        counts = [0]*6
-        counts[d1-1] += 1
-        counts[d2-1] += 1
-        counts[d3-1] += 1
-        counts[d4-1] += 1
-        counts[d5-1] += 1
-        n = 0
-        score = 0
-        for i in range(6):
-            if (counts[6-i-1] >= 2):
-                n = n+1
-                score += (6-i)
-
-        if (n == 2):
-            return score * 2
+    def two_pair(*dice):
+        num = []
+        for d in dice:
+            if dice.count(d) >= 2:
+                num.append(d)
+        if len(set(num)) > 1:
+            return sum(set(num)) * 2
         else:
             return 0
 
