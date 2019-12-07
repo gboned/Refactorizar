@@ -1,13 +1,5 @@
 class Yatzy:
 
-    def __init__(self, d1, d2, d3, d4, _5):
-        self.dice = [0]*5
-        self.dice[0] = d1
-        self.dice[1] = d2
-        self.dice[2] = d3
-        self.dice[3] = d4
-        self.dice[4] = _5
-
     @staticmethod
     def chance(*dice):
         # While, mientras haya dados, que vaya sumando sus valores
@@ -133,6 +125,6 @@ class Yatzy:
     def fullHouse(*dice):
         num = []
         for d in dice:
-            if dice.count(d) == 2 or dice.count(d) == 3:
+            if dice.count(d) in (2, 3):
                 num.append(d)
         return sum(num)
