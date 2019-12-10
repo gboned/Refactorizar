@@ -27,8 +27,8 @@ def test_twos():
 
 
 def test_threes():
-    assert 6 == Yatzy.threes(1, 2, 3, 2, 3)
-    assert 12 == Yatzy.threes(2, 3, 3, 3, 3)
+    assert Yatzy.threes(1, 2, 3, 2, 3) == 6
+    assert Yatzy.threes(2, 3, 3, 3, 3) == 12
 
 
 def test_fours_test():
