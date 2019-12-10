@@ -74,9 +74,9 @@ class Yatzy:
     @staticmethod
     def three_of_a_kind(*dice):
         num = []
-        for d in dice:
-            if dice.count(d) >= 3:
-                num.append(d)
+        for die in dice:
+            if dice.count(die) >= 3:
+                num.append(die)
             return sum(set(num)) * 3
 
     @staticmethod
