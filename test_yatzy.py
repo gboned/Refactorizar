@@ -37,10 +37,10 @@ def test_fours():
     assert Yatzy(4, 5, 5, 5, 5).fours() == 4
 
 
-def test_fives_tests():
-    assert 10 == Yatzy(4, 4, 4, 5, 5).fives()
-    assert 15 == Yatzy(4, 4, 5, 5, 5).fives()
-    assert 20 == Yatzy(4, 5, 5, 5, 5).fives()
+def test_fives():
+    assert Yatzy(4, 4, 4, 5, 5).fives() == 10
+    assert Yatzy(4, 4, 5, 5, 5).fives() == 15
+    assert Yatzy(4, 5, 5, 5, 5).fives() == 20
 
 
 def test_sixes_test():
