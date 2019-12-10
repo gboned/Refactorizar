@@ -1,8 +1,10 @@
 class Yatzy:
 
+    def __init__(self, *dice):
+        self.dice = list(dice)
+
     @staticmethod
     def chance(*dice):
-        # While, mientras haya dados, que vaya sumando sus valores
         total = 0
         for d in dice:
             total += d
@@ -38,29 +40,17 @@ class Yatzy:
                 sum += 3
         return sum
 
-    @staticmethod
-    def fours(*dice):
-        sum = 0
-        for d in dice:
-            if (d == 4):
-                sum += 4
-        return sum
+    def fours(self):
+        FOUR = 4
+        return self.dice.count(FOUR) * FOUR
 
-    @staticmethod
-    def fives(*dice):
-        sum = 0
-        for d in dice:
-            if (d == 5):
-                sum += 5
-        return sum
+    def fives(self):
+        FIVE = 5
+        return self.dice.count(FIVE) * FIVE
 
-    @staticmethod
-    def sixes(*dice):
-        sum = 0
-        for d in dice:
-            if (d == 6):
-                sum += 6
-        return sum
+    def sixes(self):
+        SIX = 6
+        return self.dice.count(SIX) * SIX
 
     @staticmethod
     def one_pair(*dice):
