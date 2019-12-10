@@ -6,8 +6,8 @@ class Yatzy:
     @staticmethod
     def chance(*dice):
         total = 0
-        for d in dice:
-            total += d
+        for die in dice:
+            total += die
         return total
 
     @staticmethod
