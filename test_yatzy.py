@@ -9,12 +9,9 @@ def test_chance():
     assert Yatzy.chance(3, 3, 4, 5, 1) == 16
 
 
-def test_yatzy_scores_50():
-    expected = 50
-    actual = Yatzy.yatzy([4, 4, 4, 4, 4])
-    assert expected == actual
-    assert 50 == Yatzy.yatzy([6, 6, 6, 6, 6])
-    assert 0 == Yatzy.yatzy([6, 6, 6, 6, 3])
+def test_yatzy():
+    assert Yatzy.yatzy(6, 6, 6, 6, 6) == 50
+    assert Yatzy.yatzy(6, 6, 6, 6, 3) == 0
 
 
 def test_1s():
