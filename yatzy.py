@@ -20,15 +20,15 @@ class Yatzy:
     def ones(*dice):
         sum = 0
         for die in dice:
-            if (die == 1):
+            if die == 1:
                 sum += 1
         return sum
 
     @staticmethod
     def twos(*dice):
         sum = 0
-        for d in dice:
-            if (d == 2):
+        for die in dice:
+            if die == 2:
                 sum += 2
         return sum
 
