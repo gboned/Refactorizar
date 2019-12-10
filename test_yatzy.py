@@ -21,9 +21,9 @@ def test_ones():
     assert Yatzy.ones(1, 2, 1, 1, 1) == 4
 
 
-def test_2s():
-    assert 4 == Yatzy.twos(1, 2, 3, 2, 6)
-    assert 10 == Yatzy.twos(2, 2, 2, 2, 2)
+def test_twos():
+    assert Yatzy.twos(1, 2, 3, 2, 6) == 4
+    assert Yatzy.twos(2, 2, 2, 2, 2) == 10
 
 
 def test_threes():
