@@ -55,9 +55,9 @@ class Yatzy:
     @staticmethod
     def one_pair(*dice):
         num = []
-        for d in dice:
-            if dice.count(d) == 2:
-                num.append(d)
+        for die in dice:
+            if dice.count(die) == 2:
+                num.append(die)
         return max(set(num)) * 2
 
     @staticmethod
