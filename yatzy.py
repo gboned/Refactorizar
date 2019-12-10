@@ -35,8 +35,8 @@ class Yatzy:
     @staticmethod
     def threes(*dice):
         sum = 0
-        for d in dice:
-            if (d == 3):
+        for die in dice:
+            if die == 3:
                 sum += 3
         return sum
 
