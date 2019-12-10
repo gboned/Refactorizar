@@ -11,7 +11,7 @@ class Yatzy:
         return total
 
     @staticmethod
-    def yatzy(dice):
+    def yatzy(*dice):
         if dice.count(dice[0]) == 5:
             return 50
         return 0
