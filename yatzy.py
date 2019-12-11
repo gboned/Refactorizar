@@ -82,9 +82,9 @@ class Yatzy:
     @staticmethod
     def four_of_a_kind(*dice):
         num = []
-        for d in dice:
-            if dice.count(d) >= 4:
-                num.append(d)
+        for die in dice:
+            if dice.count(die) >= 4:
+                num.append(die)
             return sum(set(num)) * 4
 
     @staticmethod
